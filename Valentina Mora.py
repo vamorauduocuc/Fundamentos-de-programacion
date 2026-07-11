@@ -1,6 +1,5 @@
-# ============================================================
-# Sistema de administración de cartelera - CineMax (Versión 1)
-# ============================================================
+# Cartelera
+
 
 peliculas = {
     'P101': ['Luz de Otoño', 'drama', 110, 'B', 'Español', False],
@@ -21,7 +20,7 @@ cartelera = {
 }
 
 
-# ---------- FUNCIONES DE VALIDACIÓN ----------
+#Funciones de validacion
 
 def validar_texto(valor):
     return valor.strip() != ""
@@ -43,7 +42,7 @@ def validar_codigo_nuevo(codigo):
     return validar_texto(codigo) and codigo.upper() not in peliculas
 
 
-# ---------- FUNCIONES DEL SISTEMA ----------
+# Funciones del sistema
 
 def leer_opcion():
     while True:
@@ -104,8 +103,7 @@ def eliminar_pelicula(codigo):
     return True
 
 
-# ---------- PROGRAMA PRINCIPAL ----------
-
+# Programa principal
 def main():
     while True:
         print("\n========== MENÚ PRINCIPAL ==========")
